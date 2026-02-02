@@ -1,0 +1,171 @@
+body {
+    font-size: 16px;
+    background-color: #000000da;
+    color: black;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+   #hidden-box {
+      display: block;
+   }
+}
+
+#contents div {
+    padding: 50px;
+}
+
+#footer div {
+    padding: 60px;
+}
+
+footer {
+    border-top: solid 5px #8a00d4;
+    margin-top: 50px;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
+    letter-spacing: 5px;
+}
+
+.hidden { 
+    display: none; 
+}
+
+#icon-container {
+    display: flex;
+    justify-content: center;
+}
+
+#icon-container div {
+    width: 400px;
+}
+
+header {
+  border-bottom: solid 5px #44fd75b0;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    font-size: 20px;
+    padding-bottom: 10px;
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px 2px #0b0a0a73;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#main-nav a { 
+  color: #f9266c;
+  text-decoration: none; 
+  font-weight: 600; 
+} 
+
+#main-nav a:hover { 
+  color: #00aaff; 
+  font-size: 30px;
+  border-bottom: solid 3px #36ff54;
+  font-weight: bold;
+}
+
+#about-section {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: #fdfa66;
+    text-shadow: 3px 3px 6px #8a00d4bf;
+    border-radius: 15px 50px 30px;
+    font-size: 20px;
+    letter-spacing: 4px;
+}
+
+#swerve-context {
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: solid 5px #44c2fd;
+    margin-bottom: 70px;
+    color: white;
+    letter-spacing: 3px;
+}
+
+#swerve-context p::first-letter {
+    font-size: 200%;
+    font-weight: bold;
+    color: #8a00d4c2;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px 2px #ecd0d0;
+}
+
+#swerve-context p::first-line {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+#flavours-section {
+    font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+    color: #ff4a4a;
+    text-shadow: 3px 3px 6px #36ff5488;
+    border-radius: 15px 50px 30px;
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin-bottom: 50px;
+}
+
+#apple:hover {
+  transform: rotate(-10deg);
+  transition: transform 0.3s ease;
+}
+
+#apple:hover #apple_body path {
+  fill: #ff4a4a;
+}
+
+#apple:hover #apple-leaf {
+  animation: appleLeafWiggle 0.4s ease-in-out;
+}
+
+@keyframes appleLeafWiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(6deg); }
+  50% { transform: rotate(-6deg); }
+  75% { transform: rotate(6deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#peach:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+
+#orange:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+  transition: all 0.3s ease;
+}
+
+#lemon:hover {
+  animation: wiggle 0.4s ease-in-out;
+}
+
+@keyframes wiggle {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(4deg); }
+  50% { transform: rotate(-4deg); }
+  75% { transform: rotate(4deg); }
+  100% { transform: rotate(0deg); }
+}
+
+#blueberries:hover {
+  filter: drop-shadow(0 0 10px #1987e7);
+  transition: filter 0.3s ease;
+}
+
+#watermelon:hover {
+  transform: rotate(5deg) scale(1.05);
+  filter: brightness(1.15);
+  transition: all 0.3s ease;
+}
